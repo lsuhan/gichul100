@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.*;
 import java.util.Scanner;
 
 public class Loop {
@@ -22,5 +23,29 @@ public class Loop {
         for(int st : arr){
             System.out.println(st);
         }
+    }
+
+    public static void back2439() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int n = Integer.parseInt(br.readLine());
+
+        for(int i = 1; i <=n; i++){
+            for(int j = n- i; j >=1; j--){
+                bw.write(" ");
+            }
+            for(int j =1; j <= i; j++){
+                bw.write("*");
+            }
+            bw.write("\n");
+
+        }
+
+
+        bw.flush();
+        br.close();
+        bw.close();
+
     }
 }
