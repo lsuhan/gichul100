@@ -1,10 +1,9 @@
 package org.example;
-
-import static org.example.Loop.back10950;
-import static org.example.Loop.back2439;
+import java.util.Scanner;
+import static org.example.Loop.*;
 
 import java.io.*;
-import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -15,19 +14,9 @@ public class Main {
         //백준: 2439 거꾸로 별찍기.
         /*back2439();*/
 
-        Scanner sc = new Scanner(System.in);
-
-        while (true){
-
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            if(a > 0 && b > 0){
-                System.out.println(a + b);
-            }else{
-                break;
-            }
-        }
-
+        //TODO: 2022-12-15 틀린문제(백준 1110번)
+        //do ~ while 문으로 처음에는 반드시 실행구문인데.while만씀.
+/*        back1110();*/
 
 
 

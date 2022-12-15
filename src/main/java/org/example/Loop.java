@@ -48,4 +48,20 @@ public class Loop {
         bw.close();
 
     }
+
+    public static void back1110()  throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int su = Integer.parseInt(br.readLine());
+        int copy = su;
+        int cnt = 0;
+        do {
+            su = ((su % 10) * 10) + (((su / 10) + (su % 10)) % 10);
+            cnt++;
+        } while (copy != su);
+
+        System.out.println(cnt);
+
+
+    }
 }
